@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drive_user"
+            android:icon="@drawable/driving"
+            android:title="Driving" />
+        <item
+            android:id="@+id/nav_sugges_user"
+            android:icon="@drawable/suggestion"
+            android:title="Suggestions" />
+        <item
+            android:id="@+id/nav_nearme_user"
+            android:icon="@drawable/ic_add_location_black_24dp"
+            android:title="Near Me" />
+        <item
+            android:id="@+id/nav_resolved_user"
+            android:icon="@drawable/checked"
+            android:title="Resolved Spots" />
+        <item
+            android:id="@+id/nav_unresolved_user"
+            android:icon="@drawable/cross"
+            android:title="Unresolved Spots" />
+
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_edit_user"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Edit Account" />
+            <item
+                android:id="@+id/nav_logout_user"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

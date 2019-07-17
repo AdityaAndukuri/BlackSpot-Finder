@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_n_ride"
+            android:icon="@drawable/cross"
+            android:title="New Ride" />
+
+
+
+                <item
+                    android:id="@+id/nav_my_ride"
+                    android:icon="@drawable/resolved"
+                    android:title="My Rides" />
+                <item
+                    android:id="@+id/nav_account"
+                    android:icon="@drawable/progress"
+                    android:title="My Account" />
+
+
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_edit"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Edit Account" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_shape"
+    android:bottomLeftRadius="10dp"
+    android:bottomRightRadius="10dp"
+    android:topLeftRadius="10dp"
+    android:topRightRadius="10dp"
+    tools:context=".SpotAdapter"
+    tools:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="54dp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/disp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/longitude"
+        app:layout_constraintStart_toStartOf="@+id/longitude" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/addre"
+        app:layout_constraintEnd_toStartOf="@+id/disp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disp" />
+
+    <TextView
+        android:id="@+id/addre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="35dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/longit"
+        app:layout_constraintStart_toStartOf="@+id/longitude"
+        app:layout_constraintTop_toBottomOf="@+id/longitude" />
+
+
+    <TextView
+        android:id="@+id/longit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/addre"
+        app:layout_constraintTop_toBottomOf="@+id/addre" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/disp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/longitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/longitude"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:srcCompat="@drawable/logo_new" />
+
+</android.support.constraint.ConstraintLayout>

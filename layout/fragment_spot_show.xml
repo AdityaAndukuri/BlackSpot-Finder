@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/tvImage"
+        android:layout_width="202dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:background="#EEEEEE"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvLatitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#EEEEEE"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImage" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:background="#EEEEEE"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvLongitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#EEEEEE"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvDesc"
+        app:layout_constraintEnd_toEndOf="@+id/tvDesc"
+        app:layout_constraintStart_toStartOf="@+id/tvDesc"
+        app:layout_constraintTop_toBottomOf="@+id/tvLatitude" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:background="#EEEEEE"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLongitude" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:text="Show on map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvDesc"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+
+</android.support.constraint.ConstraintLayout>
